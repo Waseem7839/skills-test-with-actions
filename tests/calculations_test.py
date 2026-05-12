@@ -72,12 +72,10 @@ def test_get_nth_fibonacci_ten():
 
 def test_get_nth_fibonacci_negative():
     """Test with negative number."""
-    
-    n = -1
  
-    result = get_nth_fibonacci(n)
+    with pytest.raises(ValueError):
+        get_nth_fibonacci(-1)
  
-    assert result is None
  
  
 def test_get_nth_fibonacci_two():
