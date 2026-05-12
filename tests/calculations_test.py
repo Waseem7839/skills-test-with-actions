@@ -69,3 +69,22 @@ def test_get_nth_fibonacci_ten():
  
     # Assert
     assert result == 55
+
+def test_get_nth_fibonacci_negative():
+    """Test with negative number."""
+    
+    n = -1
+ 
+    result = get_nth_fibonacci(n)
+ 
+    assert result is None
+ 
+ 
+def test_get_nth_fibonacci_two():
+    """Test with n=2."""
+ 
+    n = 2
+ 
+    result = get_nth_fibonacci(n)
+ 
+    assert result == 1
